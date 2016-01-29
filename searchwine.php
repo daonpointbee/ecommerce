@@ -7,6 +7,7 @@
 	<div><a href="browsewine.php">Click to Browse by Category</a></div>
 	<div><a href="login.php">Click to Add Wine</a></div>
 		<?php
+		echo $pagenumber;
 		include("wine.php");
 		$var = new wine();
 		$search_text = "";
