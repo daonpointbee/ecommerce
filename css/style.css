@@ -1,0 +1,238 @@
+body{
+ margin: 0;   
+}
+
+
+.clickspot{
+	text-decoration:underline;
+	color:blue;
+	cursor:pointer
+}
+.status{
+	background-color:Yellow
+}
+.error{
+	color:Red;
+	background-color:Yellow
+}
+
+.menuitem {
+	text-decoration:underline;
+	color: #293c4e;
+	cursor:hand;
+/*    padding: 10;*/
+/*    align-content: center;*/
+    text-align: center;
+    margin: 3;
+/*    background-color: crimson;*/
+}
+.menuitem:hover{
+	text-decoration:underline;
+	cursor:hand;
+/*	font-weight:bold;*/
+/*	background-color:Silver*/
+}
+
+.menu {
+	text-decoration:underline;
+	color:#939d86;
+	cursor:hand;
+    padding: 10;
+/*    align-content: center;*/
+    text-align: left;
+    margin: 3;
+
+        border-bottom: 1px;
+    border-bottom-color: #243546;
+    border-bottom-style: solid;
+
+
+/*    background-color: white;*/
+}
+.menu:hover{
+    	color:white;
+
+	text-decoration:underline;
+	cursor:hand;
+
+/*	font-weight:bold;*/
+/*	background-color:#243546;*/
+}
+
+#divContent
+{
+    height: 475px;
+    background-color: #f5f5f5;
+}
+
+#divPageMenu
+{
+    background-color: #939d86;
+    margin:auto;
+    height: 35px;
+/*    padding-top: 9;*/
+    align-content: center;
+}
+
+#divMainNav
+{
+    padding-top: 1px;
+    padding-bottom: 5px;
+/*    background-color: #FFF;*/
+/*
+    border-right: 3px;
+    border-right-color: blue;
+    border-right-style: solid;
+*/
+    height: 100%;
+
+}
+
+
+#pagelayout
+{
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+/*    align-self: center;*/
+/*    border-collapse: collapse;*/
+}
+
+#pageheader
+{
+    height: 1in;
+/*    background-color: white;*/
+    font-size: large;
+    text-align: center;
+/*    background-color:#293c4e;*/
+/*    background-image: image(../img/ashesi_banner_2011.png);*/
+/*background-image:url("../img/ashesi_banner_2011.png");*/
+/*    background-image: url(../img/ashesi_banner_2011.png);*/
+    background-image: url(ashesi_banner_2011.png);
+    background-size: 100% 100%;
+/*    background-position: center;*/
+}
+
+#mainnav{
+	width:2.6in;
+	vertical-align:top;
+    height: 100%;
+    
+/*
+     border-right: 3px;
+    border-right-color: blue;color: white;
+    text-decoration-color: 
+
+    border-right-style: solid;
+*/
+    
+    /*    height: 100%;*/
+    background-color: #293c4e;
+        
+}
+
+#mainnav .menuitem 
+{
+/*background-color: crimson;*/
+    text-align: left;
+/*    border: green;*/
+}
+
+.searcher
+{
+ float: right;   
+}
+
+#searcher
+{
+ float: right;   
+}
+
+
+
+
+#content {
+	width:10in;
+	vertical-align:top
+	
+}
+
+.reportTable 
+{
+    border:1px;
+    border-collapse:collapse;
+}
+
+.reportTable .header
+{
+    background-color: #CC6600;
+    text-transform: uppercase;
+    color: White;
+}
+
+.reportTable .row1
+{
+    background-color: #FFE0B3;
+}
+
+.reportTable .row2
+{
+    background-color:White;
+}
+
+.reportTable tr:hover
+{
+    background-color:Yellow
+}
+
+.tableForm .label
+{
+    background-color: #CC6600;
+    text-transform:capitalize;
+    color: White;
+    text-align:right;
+}
+
+.tableForm .field
+{
+    background-color: #FFAE35;
+}
+.popupMenu
+{
+    background-color: #DC7518;
+    position: absolute;
+    display:none;
+    width: auto;
+}
+
+.popupMenu div
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.popupMenu div:hover
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+    background-color: #CC6600;
+}
+
+.popupForm
+{
+    background-color: #DC7518;
+    position: absolute;
+    display:none;
+    width: auto;
+}
+
+
+
+
+
+
+
+.bg-gradient-1 {
+
+  background-color: #3498db;
+}
