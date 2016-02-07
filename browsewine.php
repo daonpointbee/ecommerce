@@ -4,7 +4,7 @@
 		<title>Browse Wine</title>
 	</head>
 	<body>
-	<div><a href="displaywine.php">Return to Home</a></div>
+	<div><a href="paginationdisplaywine.php">Return to Home</a></div>
 	<div><a href="sortwine.php?wid=Cost">Click to Sort Wine</a></div>
 		<?php
 		include("wine.php");

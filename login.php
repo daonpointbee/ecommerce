@@ -22,7 +22,8 @@
 	                    <div style="margin-left:40%; margin-top:10%;">
 	                <form method="POST" action="login.php">
 	                    <h3>Login to use system</h3>
-	                    <h5><i>Username is admin and password is test</i></h5>
+	                    <h5><i>Username for admin is admin and password is test</i></h5>
+	                     <h5><i>Username for regular user is regular and password is test</i></h5>
 	                        Username :<input type="text" size="30" name="username"><br> 
 	                        Password :<input type="password" size="30" name="pword"><br>
 	                        <input style="margin-left:30%;" type="submit" value="sign in">
@@ -82,7 +83,7 @@
 
 					 		echo '<script>';
 
-					 		echo 'window.location.replace("addwine.php")';
+					 		echo 'window.location.replace("paginationdisplaywine.php")';
 
 					 		echo '</script>'; 
 					 		

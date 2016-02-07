@@ -17,26 +17,6 @@
 			return $this->query($str_query);
 		}
 
-// 		function admin_session(){
-// 			 	session_start();
-//  	if(isset($_SESSION['USER'])){
-//  		header("location: searchStaff.php");
-//  		exit();
-//  	}
-//  	if($_SESSION['USER']['USER_TYPE']!=="ADMIN"){
-// 	header("location: login.php");
-// 	exit();
-// }
-// 		}
-
-// 				function user_session(){
-// 			 	session_start();
-//  	if(!isset($_SESSION['USER'])){
-//  		header("location: login.php");
-//  		exit();
-//  	}
- 	
-// 		}
 }
 	
 ?>

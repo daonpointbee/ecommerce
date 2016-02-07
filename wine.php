@@ -24,12 +24,13 @@
 							Where wine_id='$wid'";
 			return $this->query($str_query);
 		}
-		function display_wine(){
-			$str_query =  "Select wine_id, wine_name, wine_type.wine_type, year, winery.winery_name 
-							From `wine`, `winery`, `wine_type` 
-							where wine.wine_type=wine_type.wine_type_id 
-							AND wine.winery_id=winery.winery_id 
-							order by wine_id";
+		function display_wine($limit){
+		    $str_query =  "Select wine_id, wine_name, wine_type.wine_type, year, winery.winery_name 
+			 				From `wine`, `winery`, `wine_type` 
+			 				where wine.wine_type=wine_type.wine_type_id 
+			 				AND wine.winery_id=winery.winery_id 
+			 				order by wine_id";
+			echo $limit;
 			return $this->query($str_query);
 		}
 		
@@ -53,7 +54,7 @@
 			return $this->query($str_query);
 		}
 		function view_wine($wid){
-			$str_query = "select wine.wine_name, winery.winery_name, inventory.on_hand, inventory.cost, region.region_name
+			$str_query = "select wine.wine_name, winery.winery_name, inventory.on_hand, inventory.cost, region.region_name,image
 							From wine JOIN winery ON wine.winery_id=winery.winery_id 
 							JOIN inventory ON wine.wine_id = inventory.wine_id 
 							Join region ON region.region_id=winery.region_id 
@@ -72,8 +73,6 @@
 			$str_query = "select * from user where user_name = '$name' and password='$password'";
 			return $this->query($str_query);
 		}
-		function view_wine_type_id(){
-			
-		}
+	
 	}
 	?>

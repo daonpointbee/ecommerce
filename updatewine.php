@@ -1,10 +1,16 @@
+<?php
+	// session_start();
+	// if(!isset($_SESSION['USERNAME'])){
+	// 	header("location:login.php");
+	// }
+?>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Edit Wine</title>
 	</head>
 	<body>
-	<form action="addwine.php" method="GET">
+	<form action="updatewine.php" method="GET">
 			<div>Wine Name : <input type="text" name="wn"> </div>
 			<div>Wine Type : <select name = "wt">
 			<option value="0">--Select Wine ID--</option>
@@ -17,7 +23,8 @@
 			<div>Year : <input type="text" name="yr"></div>
 			<div> Winery ID: <input type="text" name = "wnid"></div>
 			<div>Description : <input type="text" name="desc"></div>
-			<div><input type="submit" value="add"> </div>
+			<div>Image Path : <input type="text" name="img"></div>
+			<div><input type="submit" value="Edit"> </div>
 	</form>
 		<?php
 		if (!isset($_REQUEST['wn'])) {
@@ -32,13 +39,14 @@
 			$year=$_REQUEST['yr'];
 			$wineid=$_REQUEST['wnid'];
 			$Desc=$_REQUEST['desc'];
+			$img=$_REQUEST['img'];
 			
-			if(!$var->update_wine($wid, $name, $type, $year, $wineid, $Desc)) {
+			if(!$var->update_wine($_REQUEST['wid'], $name, $type, $year, $wineid, $Desc, $img)) {
 				echo mysql_error();
-                echo "Error Inserting Equipment";
+                echo "Error Updating wine details";
                 
 			}else{
-				echo "$name successfully added to inventory";
+				echo "$name successfully edited";
 			}	
 		}
 		?>

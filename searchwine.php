@@ -1,13 +1,22 @@
+<?php
+	/*session_start();
+	if(!isset($_SESSION['USERNAME'])){
+		header("location:login.php");
+	}
+	*/
+?>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Search Wine</title>
+		<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-	<div><a href="browsewine.php">Click to Browse by Category</a></div>
-	<div><a href="login.php">Click to Add Wine</a></div>
+	<a href="browsewine.php">Click to Browse by Category</a>
+	<a href="addwine.php">Click to Add Wine</a>
+	<div><a href="sortwine.php?wid=Cost">Click to Sort Wine</a></div>
+		
 		<?php
-		echo $pagenumber;
 		include("wine.php");
 		$var = new wine();
 		$search_text = "";
