@@ -24,7 +24,7 @@
 							Where wine_id='$wid'";
 			return $this->query($str_query);
 		}
-		function display_wine($limit){
+		function display_wine(){
 		    $str_query =  "Select wine_id, wine_name, wine_type.wine_type, year, winery.winery_name 
 			 				From `wine`, `winery`, `wine_type` 
 			 				where wine.wine_type=wine_type.wine_type_id 
