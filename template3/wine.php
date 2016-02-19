@@ -30,6 +30,7 @@
 			 				where wine.wine_type=wine_type.wine_type_id 
 			 				AND wine.winery_id=winery.winery_id 
 			 				order by wine_id";
+		
 			return $this->query($str_query);
 		}
 		
